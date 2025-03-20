@@ -9,12 +9,11 @@ int main() {
     // Sugestão: Declare uma matriz bidimensional para representar o tabuleiro (Ex: int tabuleiro[5][5];).
     const int LINHA = 10;
     const int COLUNA = 10;
-    const int TAMANHO_NAVIO = 3;
     char colunasTabuleiro[10] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
 
     int tabuleiro[LINHA][COLUNA];
-    //int navio1[TAMANHO_NAVIO] = {3,3,3};
-    //int navio2[TAMANHO_NAVIO] = {3,3,3};
+    int navio1[3] = {3,3,3};
+    int navio2[3] = {3,3,3};
 
     for(int i = 0; i < LINHA; i++){
         for(int j = 0; j < COLUNA; j++){
