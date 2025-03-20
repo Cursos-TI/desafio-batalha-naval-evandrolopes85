@@ -9,7 +9,12 @@ int main() {
     // Sugestão: Declare uma matriz bidimensional para representar o tabuleiro (Ex: int tabuleiro[5][5];).
     const int LINHA = 10;
     const int COLUNA = 10;
+    const int TAMANHO_NAVIO = 3;
+    char colunasTabuleiro[10] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
+
     int tabuleiro[LINHA][COLUNA];
+    //int navio1[TAMANHO_NAVIO] = {3,3,3};
+    //int navio2[TAMANHO_NAVIO] = {3,3,3};
 
     for(int i = 0; i < LINHA; i++){
         for(int j = 0; j < COLUNA; j++){
@@ -18,7 +23,13 @@ int main() {
     }
     // Sugestão: Posicione dois navios no tabuleiro, um verticalmente e outro horizontalmente.
     // Sugestão: Utilize `printf` para exibir as coordenadas de cada parte dos navios.
-    printf("%2c %2c %2c %2c %2c %2c %2c %2c %2c %2c %2c\n", ' ','A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J');    
+    for(int i = 0; i < LINHA; i++){
+        if(i == 0)
+            printf("%5c ", colunasTabuleiro[i]);
+        else
+            printf("%2c ", colunasTabuleiro[i]);
+    }
+    printf("\n");
     for(int i = 0; i < LINHA; i++){
         printf("%2d ", i+1);
         for(int j = 0; j < COLUNA; j++){
